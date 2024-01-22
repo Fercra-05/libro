@@ -2,11 +2,18 @@ Ej 1
 
 
 
+
 Ej 2
 
 
 
 Ej 3
+
+>echo FER > indice2.txt
+notepad indice2.txt
+git status
+git add .
+git status
 
 
 
