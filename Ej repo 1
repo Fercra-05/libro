@@ -1,6 +1,7 @@
 Ej 1
-
-
+git config --global user.name “[Fernando Craviotto]”
+git config --global user.email “[j.craviotto.herraiz@gmail.com]”
+git config --global color.ui auto
 
 
 Ej 2
@@ -23,6 +24,8 @@ Ej 4
 git commit -m "Añadido índice del libro"
 git status
 
+
+Ej 5
 
 
 
