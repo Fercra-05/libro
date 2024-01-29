@@ -1,0 +1,40 @@
+git clone https://github.com/asalber/libro-git.git
+cd libro-git
+git reset --hard 48ed8
+git remote remove origin
+git init
+
+Ej 1
+
+git branch bibliografia
+git branch -av
+Ej 2
+mkdir capitulos
+echo En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto. >>capitulo4.txt
+git add . 
+git commit -m "Añadidio capítulo 4."
+git log --oneline
+Ej 3
+git checkout bibliografia
+echo Chacon, S. and Straub, B. Pro Git. Apress. >> bibliografia.txt
+git add .
+git commit -m "Añadida primera referencia bibliográfica"
+
+Ej 4
+git checkout master
+git merge bibliografia
+git log --oneline
+git branch -d bibliografia
+git log --oneline
+
+Ej 5
+git branch bibliografia
+git checkout bibliografia
+echo Scott Chacon and Ben Straub. Pro Git. Apress. Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014) >> bibliografia.txt
+git commit -a -m "Añadida nueva referencia bibliográfica."
+git merge bibliografia
+echo Chacon, S. and Straub, B. Pro Git. Apress. Loeliger, J. and McCullough, M. Version control with Git. O’Reilly. Hodson, R. Ry’s Git Tutorial. Smashwords (2014) >bibliografia.txt
+git add .
+git commit -m "Solucionado conflicto bibliografía."
+git log --oneline
+
